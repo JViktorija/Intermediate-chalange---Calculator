@@ -1,26 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Open+Sans&family=Oswald:wght@300;400;700&family=Poppins:wght@400;500;700&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Calculator app</title>
 
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <div class="container">
+        <div class="calc flex">
+          <h1>calc</h1>
+          <div class="themes-slider flex">
+            <h2 class="theme">THEME</h2>
+            <div class="calc-slide flex">
+              <div id="slider" class="flex">
+                <h1 id="slider-element-1" class="slider">1</h1>
+                <h1 id="slider-element-2" class="slider">2</h1>
+                <h1 id="slider-element-3" class="slider">3</h1>
+              </div>
+              <button id="theme-button"></button>
+            </div>
+          </div>
+        </div>
+        <input class="input" type="text" id="result" disabled />
+        <div class="calc-main">
+          <div class="calc-btns">
+            <button class="btn" onclick="appendToResult('7')">7</button>
+            <button class="btn" onclick="appendToResult('8')">8</button>
+            <button class="btn" onclick="appendToResult('9')">9</button>
+            <button class="btn" onclick="appendToResult('del')">DEL</button>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+            <button class="btn" onclick="appendToResult('4')">4</button>
+            <button class="btn" onclick="appendToResult('5')">5</button>
+            <button class="btn" onclick="appendToResult('6')">6</button>
+            <button class="btn" onclick="appendToResult('+')">+</button>
+
+            <button class="btn" onclick="appendToResult('1')">1</button>
+            <button class="btn" onclick="appendToResult('2')">2</button>
+            <button class="btn" onclick="appendToResult('3')">3</button>
+            <button class="btn" onclick="appendToResult('-')">-</button>
+
+            <button class="btn" onclick="appendToResult('.')">.</button>
+            <button class="btn" onclick="appendToResult('0')">0</button>
+            <button class="btn" onclick="appendToResult('/')">/</button>
+            <button class="btn" onclick="appendToResult('*')">x</button>
+          </div>
+          <div class="calc-sums flex">
+            <button class="btn" onclick="reset()">RESET</button>
+            <button class="btn" onclick="calculate()">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">JViktorija</a>.
+    </div>
+  </body>
 </html>

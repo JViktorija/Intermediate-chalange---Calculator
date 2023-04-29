@@ -1,0 +1,93 @@
+@import '/css/common.css';
+
+html, body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: hsl(222, 26%, 31%);
+}
+
+
+h1, h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+.themes-slider {
+    font-size: 0.7rem;
+}
+
+.slider {
+    margin-left: 1rem;
+    align-self: center;
+}
+
+.calc {
+    justify-content: space-between;
+    padding-bottom: 3rem;
+    font-weight: 700;
+}
+
+.theme {
+    align-self: flex-end;
+    margin: 0;
+    padding-right: 2rem;
+    font-weight: 700;
+}
+
+
+.calc-slide {
+    flex-direction: column;
+}
+
+.calc-btns {
+    font-size: 3.2rem;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: stretch;
+    gap: 1rem;
+    padding-top: 1rem;
+    
+    /* padding: 0.1rem 1rem; */
+}
+
+.btn {
+    font-size: 3.2rem;
+    padding: 1rem;
+    width: 5rem;
+    /* max-height: 10rem; */
+    min-width: 100%;
+    color: hsl(221, 14%, 31%);
+    background-color: snow;
+    font-weight: 700;
+    border-radius: 1rem;
+    background-color: rgb(234,227,219);
+}
+
+.calc-main {
+    padding: 2rem;
+    margin-top: 2rem;
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 1rem;
+}
+
+.calc-sums {
+    font-size: 3.2rem;
+    padding-top: 1rem;
+    width: 49%;
+    gap: 1rem;
+}
+
+.input {
+    font-size: 3.2rem;
+    width: 100%;
+    text-align: right;
+    background-color: hsl(224, 36%, 15%);
+    color: hsl(0, 0%, 100%);
+    padding: 2rem;
+    font-weight: 700;
+    border-radius: 1rem;
+}
+
+
+/* =========================== BUTTON SLIDER */
+
+  

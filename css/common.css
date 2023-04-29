@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .container {
+    padding-top: 20rem;
+    max-width: 50rem;
+    min-height: 80rem;
+    margin: 0 auto;
+  }
+  
+  /* utility classes */
+  
+  .flex {
+    display: flex;
+  }
+  
