@@ -1,5 +1,4 @@
 "use strict";
-console.log("main.js");
 
 function appendToResult(value) {
   let resultElement = document.getElementById("result");
@@ -27,7 +26,6 @@ function calculate() {
 // BUTTON ==============================================
 
 const toggleInput = () => {
-  console.log("toggleInput called");
   const inputElem = document.getElementById('toggle-input');
   const btnBoxElem = document.getElementById('toggle-btn');
   const currentPos = btnBoxElem.getAttribute('data-position');

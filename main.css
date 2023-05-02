@@ -54,11 +54,27 @@ h1, h2 {
     width: 5rem;
     /* max-height: 10rem; */
     min-width: 100%;
-    color: hsl(221, 14%, 31%);
+    color: #3C4353;
     background-color: snow;
     font-weight: 700;
     border-radius: 1rem;
     background-color: rgb(234,227,219);
+}
+
+.h-white:hover {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.h-blue:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: #A2B3E1;
+    font-size: smaller;
+}
+
+.h-red:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: #F96C5B;
+    font-size: smaller;
 }
 
 .calc-main {
