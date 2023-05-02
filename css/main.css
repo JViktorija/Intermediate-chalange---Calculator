@@ -1,0 +1,39 @@
+@import 'common.css';
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    color: #333;
+}
+
+.calc-btns {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    gap: 0.5rem;
+    padding: 0.1rem 1rem;
+}
+
+.input {
+    font-size: 7rem;
+    margin: 1rem;
+    width: 100%;
+    text-align: center;
+    background-color: #DA70D6;
+    color: #333;
+}
+
+html, body {
+    width: 100vw;
+    min-height: 100vh;
+    background: repeating-conic-gradient(
+        #ba98c0 0 15deg,
+        #9174be 15deg 30deg
+        );
+    
+}
+
+.calculator button {
+    font-size: 7rem;
+    background-color: #DA70D6;
+    color: #333;
+}
