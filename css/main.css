@@ -61,11 +61,6 @@ h2 {
   box-shadow: inset 0 -3px 0 0 #b2a195;
 }
 
-.h-blue:hover,
-.h-red:hover {
-  font-size: smaller;
-}
-
 .h-white:hover {
   background-color: hsl(0, 0%, 100%);
 }
@@ -192,10 +187,6 @@ h2 {
   box-shadow: inset 0 -3px 0 0 #893a00;
 }
 
-.theme-2 .h-red:hover,
-.theme-2 .h-blue:hover {
-  font-size: smaller;
-}
 
 .theme-2 .attribution a {
   color: #ff8b38;
@@ -249,11 +240,6 @@ h2 {
 .theme-3 .h-red {
   background-color: #94fff9;
   box-shadow: inset 0 -3px 0 0 #6df8ef;
-}
-
-.theme-3 .h-red:hover,
-.theme-3 .h-blue:hover {
-  font-size: smaller;
 }
 
 .theme-3 .attribution a {
