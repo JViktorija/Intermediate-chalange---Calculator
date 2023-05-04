@@ -61,8 +61,8 @@ h2 {
   box-shadow: inset 0 -3px 0 0 #b2a195;
 }
 
-.h-blue,
-.h-red {
+.h-blue:hover,
+.h-red:hover {
   font-size: smaller;
 }
 
@@ -70,13 +70,13 @@ h2 {
   background-color: hsl(0, 0%, 100%);
 }
 
-.h-blue:hover {
+.h-blue {
   color: hsl(0, 0%, 100%);
   background-color: #a2b3e1;
   box-shadow: inset 0 -3px 0 0 #424D75;
 }
 
-.h-red:hover {
+.h-red {
   color: hsl(0, 0%, 100%);
   background-color: #f96c5b;
   box-shadow: inset 0 -3px 0 0 #93261A;
@@ -182,14 +182,19 @@ h2 {
   background-color: #ffffff;
 }
 
-.theme-2 .h-blue:hover {
+.theme-2 .h-blue {
   background-color: #62b5bd;
   box-shadow: inset 0 -3px 0 0 #1d6068;
 }
 
-.theme-2 .h-red:hover {
+.theme-2 .h-red {
   background-color: #ff8b38;
   box-shadow: inset 0 -3px 0 0 #893a00;
+}
+
+.theme-2 .h-red:hover,
+.theme-2 .h-blue:hover {
+  font-size: smaller;
 }
 
 .theme-2 .attribution a {
@@ -236,14 +241,19 @@ h2 {
   background-color: #6b34ac;
 }
 
-.theme-3 .h-blue:hover {
+.theme-3 .h-blue {
   background-color: #8631b0;
   box-shadow: inset 0 -3px 0 0 #bf15f4;
 }
 
-.theme-3 .h-red:hover {
+.theme-3 .h-red {
   background-color: #94fff9;
   box-shadow: inset 0 -3px 0 0 #6df8ef;
+}
+
+.theme-3 .h-red:hover,
+.theme-3 .h-blue:hover {
+  font-size: smaller;
 }
 
 .theme-3 .attribution a {
@@ -259,6 +269,7 @@ h2 {
 
 @media screen and (max-width: 375px) {
   .container {
+    padding-top: 5rem;
     max-width: 30rem;
     margin: 0 auto;
   }
